@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Untitled</title>
+        <title>SPA Quiz Carlot</title>
         <link rel="stylesheet" href="css/quiz.css">
         <link rel="author" href="humans.txt">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
@@ -27,6 +28,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
               </ul>
+              <input type="text" name="textIn" class="textIn">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -35,9 +37,13 @@
           </div>
         </nav>
 
-        <input type="text" name="textIn" class="textIn">
-
-        <div class="container"></div>
+        <div class="container" id="container">
+<!--           <div class="row" id="cardRow">
+            <div class="col-md-3" id="cardDiv">.col-md-3</div>
+            <div class="col-md-3 col-md-offset-1">.col-md-3</div>
+            <div class="col-md-3 col-md-offset-1">.col-md-3</div>
+          </div> -->
+        </div>
 
         <script src="javascripts/Carlot.js"></script>
         <script src="javascripts/quiz.js"></script>

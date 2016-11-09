@@ -29,10 +29,10 @@ You operate a used car lot, and need to have an application where you can update
 
 ### Behavior
 
-1. Create an array of cars in the `inventory.json` file (see example structure below). Put at least three cars in the array.
-1. When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.
+11/8/16 Create an array of cars in the `inventory.json` file (see example structure below). Put at least three cars in the array.
+11/9/16 When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.
 1. Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of `container`. Hint: You must build up the entire string of columns/rows before injecting into the DOM. Use a counter variable to know when to close a row after three columns.
-1. Put a standard Bootstrap navbar element at the top of your page.
+11/9/16 Put a standard Bootstrap navbar element at the top of your page.
 1. Put a text input field in the navigation bar.
 1. Make sure you display all properties of the car in the DOM. Basic styling is up to you.
 1. Make sure that each car card element has a CSS class which adds a black border around it.
@@ -74,7 +74,7 @@ Please read, and feel free to use, the code below to get started.
 ```js
 function populatePage (inventory) {
   // Loop over the inventory and populate the page
-  
+
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.activateEvents();
 }
