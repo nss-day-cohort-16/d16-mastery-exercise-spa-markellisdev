@@ -22,19 +22,34 @@ function populatePage (inventory) {
 // Create card divs to contain each cars information
 		var cardDiv = document.createElement("div");
 		cardDiv.setAttribute("class", "col-md-3 col-md-offset-1");
-		cardDiv.innerHTML += car;
+		cardDiv.innerHTML = car;
 
 // Create row for each set of 3 cards
-		if ((i + 1) % 3 === 0) {
-	console.log("arrayLength in row loop", i);
+		if ((i + 1) % 2 === 0) {
+			console.log("arrayLength in row loop", i);
 			var cardRow = document.createElement("div");
 			cardRow.setAttribute("class", "row");
 			cardRow.setAttribute("id", "cardRow");
 		}
 
+		cardDiv.addEventListener("click", function(event) {
+			// change the width of the border to a higher value
+			var border = event.currentTarget;
+			border.classList.toggle("strongBorder");
+			// change the background color to any other color of your choosing
+			var backColor = event.currentTarget;
+			backColor.classList.toggle("greybcg");
+			// clear the value of the text input in the navbar
+			document.getElementById("textIn").value = "";
+			// put the [cursor in the text input]
+			document.getElementById("textIn").focus();
+		});
+
+
 	}
 
-	document.getElementById("container").appendChild(cardRow).appendChild(cardDiv);
+	document.getElementById("container").appendChild(cardRow);
+	document.getElementById("cardRow").append(cardDiv);
 
 
 
