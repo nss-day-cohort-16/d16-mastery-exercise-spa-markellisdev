@@ -17,7 +17,7 @@ function populatePage (inventory) {
 		}
 //Add all properties inside car variable
   		car +=
-	  		`<div "col-md-3 span3 offset1">
+	  		`<div "col-sm-3 col-sm-offset-1">
 	  		<header class="carTitle">${inventory[i].year}<strong>${inventory[i].make}</strong>: ${inventory[i].model}
 			</header>
 			<div class="carDescription">
@@ -34,36 +34,36 @@ function populatePage (inventory) {
 		toAppend = rowOpen + car + rowClose;
 
 
+/* ----Original way I was creating cards and rows, which worked, but only created last card; was replacing card info each time through loop.
 
+Create card divs to contain each cars information
+		var cardDiv;
+		cardDiv += document.createElement("div");
+		cardDiv.setAttribute("class", "col-md-3 col-md-offset-1");
+		cardDiv.innerHTML += car;
+		cardDiv.id += i;
 
-// Create card divs to contain each cars information
-		// var cardDiv;
-		// cardDiv += document.createElement("div");
-		// cardDiv.setAttribute("class", "col-md-3 col-md-offset-1");
-		// cardDiv.innerHTML += car;
-		// cardDiv.id += i;
+Create row for each set of 3 cards
+		if ((i + 1) % 2 === 0) {
+			console.log("arrayLength in row loop", i);
+			var cardRow = document.createElement("div");
+			cardRow.setAttribute("class", "row");
+			cardRow.setAttribute("id", "cardRow");
+		}
 
-// Create row for each set of 3 cards
-		// if ((i + 1) % 2 === 0) {
-		// 	console.log("arrayLength in row loop", i);
-		// 	var cardRow = document.createElement("div");
-		// 	cardRow.setAttribute("class", "row");
-		// 	cardRow.setAttribute("id", "cardRow");
-		// }
-
-		// cardDiv.addEventListener("click", function(event) {
-		// 	// change the width of the border to a higher value
-		// 	var border = event.currentTarget;
-		// 	border.classList.toggle("strongBorder");
-		// 	// change the background color to any other color of your choosing
-		// 	var backColor = event.currentTarget;
-		// 	backColor.classList.toggle("greybcg");
-		// 	// clear the value of the text input in the navbar
-		// 	document.getElementById("textIn").value = "";
-		// 	// put the [cursor in the text input]
-		// 	document.getElementById("textIn").focus();
-		// });
-
+		cardDiv.addEventListener("click", function(event) {
+			// change the width of the border to a higher value
+			var border = event.currentTarget;
+			border.classList.toggle("strongBorder");
+			// change the background color to any other color of your choosing
+			var backColor = event.currentTarget;
+			backColor.classList.toggle("greybcg");
+			// clear the value of the text input in the navbar
+			document.getElementById("textIn").value = "";
+			// put the [cursor in the text input]
+			document.getElementById("textIn").focus();
+		});
+*/
 
 	}
 
