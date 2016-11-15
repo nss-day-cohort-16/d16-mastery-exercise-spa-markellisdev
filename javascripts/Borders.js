@@ -4,7 +4,8 @@ var CarLot = (function (Carlot) {
   var inventory = [];
 
 
-  function borderBG (event, color) {
+  CarLot.borderBG = function (event, color) {
+    console.log("anything in border function?");
       // change the width of the border to a higher value
       var border = event.currentTarget;
       border.classList.toggle("strongBorder");
@@ -21,13 +22,20 @@ var CarLot = (function (Carlot) {
 
     }
 
-    function borderReset (event) {
+    CarLot.borderReset = function (event) {
 
       var border = event.currentTarget;
       border.classList.toggle("strongBorder");
 
       var backColor =event.currentTarget;
       backColor.classList.toggle("greybcg");
+
+    }
+
+    function clickToType (event) {
+      let typeArea = event.currentTarget.querySelector("p");
+      console.log("are you there", typeArea);
+      typeArea.innerHTML = document.getElementById("textIn").value;
 
     }
   return CarLot;
