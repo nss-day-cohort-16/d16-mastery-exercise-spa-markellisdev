@@ -1,6 +1,6 @@
 "use strict";
 /*jshint loopfunc: true */
-var CarLot = (function () {
+var CarLot = (function (Carlot) {
   var inventory = [];
 
 
@@ -15,9 +15,12 @@ var CarLot = (function () {
       	console.log("inventory", inventory);
 	  	callback(inventory);
       });
+
     },
     getInventory: function () {
     	return inventory;
-    }
+    },
+    CarLot
   };
-})();
+})(CarLot || {});
+
