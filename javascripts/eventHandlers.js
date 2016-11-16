@@ -19,8 +19,11 @@ var CarLot = (function (CarLot) {
     //Event listener for input
     CarLot.clickToType = function (event) {
       let typeArea = event.currentTarget.querySelector("p");
+      let correctCard = event.currentTarget;
       input.addEventListener("keydown", function(event) {
-      typeArea.innerHTML = document.getElementById("textIn").value;
+        if (correctCard.classList.contains('strongBorder')) {
+          typeArea.innerHTML = document.getElementById("textIn").value;
+        }
       });
     };
   };

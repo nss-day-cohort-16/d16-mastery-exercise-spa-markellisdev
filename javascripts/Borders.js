@@ -3,7 +3,6 @@
 var CarLot = (function (CarLot) {
   var inventory = [];
 
-
   CarLot.borderBG = function (event, color) {
     console.log("anything in border function?");
 
