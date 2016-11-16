@@ -14,7 +14,6 @@ var CarLot = (function(CarLot) {
 // For loop over inventory to create rows and cards and then populate page
 
 	  	for (var i=0; i<arrayLength; i++) {
-	  		console.log("inventory length", arrayLength, inventory[i]);
 
   		// Open row
 
