@@ -22,7 +22,6 @@ var CarLot = (function (CarLot) {
         var backColor = event.currentTarget;
         backColor.classList.add("greybcg");
 
-        var clicked = event.currentTarget.querySelector(".bio");
         // clear the value of the text input in the navbar
         document.getElementById("textIn").value = "";
         // put the [cursor in the text input]
@@ -30,26 +29,11 @@ var CarLot = (function (CarLot) {
 
 
         } else {
-
         cars[x].classList.remove("strongBorder");
-
-
         cars[x].classList.remove("greybcg");
-
-
         }
-        }
+      }
 
-    CarLot.clickToType = function (event) {
-
-
-
-      let typeArea = event.currentTarget.querySelector("p");
-      console.log("are you there", typeArea);
-      console.log(document.getElementById("textIn") );
-      typeArea.innerHTML = document.getElementById("textIn").value;
-
-      };
 
   };
   return CarLot;

@@ -20,4 +20,7 @@
 .greybcg {
   background-color: lightblue; }
 
+#info {
+  word-wrap: break-word; }
+
 /*# sourceMappingURL=quiz.css.map */
