@@ -1,0 +1,22 @@
+.col-md-3 {
+  border: 1px solid black; }
+
+.carTitle {
+  border: 1px solid black; }
+
+.carDescription {
+  border: 1px solid black; }
+
+.carFooter {
+  border: 1px solid black; }
+
+.strongBorder {
+  border: 3px solid black; }
+
+.greybcg {
+  background-color: lightblue; }
+
+#info {
+  word-wrap: break-word; }
+
+/*# sourceMappingURL=quiz.css.map */

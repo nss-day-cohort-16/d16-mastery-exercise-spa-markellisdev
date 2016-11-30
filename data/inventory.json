@@ -1,0 +1,27 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "$8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+
+    {
+    	"make": "Mercedes",
+    	"model": "C230",
+    	"year": "1997",
+    	"price": "$6500",
+    	"description": "This 1997 C230 is the last of the four cylinder models based on the strong running 190. These cars can easily make it to 300,000 miles. Leather seats, power everything, well maintained."
+    },
+
+    {
+    	"make": "BMW",
+    	"model": "335D",
+    	"year": "2010",
+    	"price": "$18,000",
+    	"description": "This 2010 BMW lives up to it's heritage. It has more torque than it's gasoline brother, the 335, yet handles the curves with the same quickness and reliability. Leather, fully loaded. Don't miss this one!"
+    }
+  ]
+}

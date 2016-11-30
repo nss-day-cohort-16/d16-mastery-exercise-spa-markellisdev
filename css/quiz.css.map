@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,SAAU;EACT,MAAM,EAAE,eAAe;;AAGxB,SAAU;EACT,MAAM,EAAE,eAAe;;AAGxB,eAAgB;EACf,MAAM,EAAE,eAAe;;AAGxB,UAAW;EACV,MAAM,EAAE,eAAe;;AAGxB,aAAc;EACb,MAAM,EAAE,eAAe;;AAGxB,QAAS;EACR,gBAAgB,EAAE,SAAS;;AAG5B,KAAM;EACL,SAAS,EAAE,UAAU",
+"sources": ["../sass/quiz.scss"],
+"names": [],
+"file": "quiz.css"
+}
